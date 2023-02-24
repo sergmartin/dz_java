@@ -6,13 +6,13 @@ public class task1 {
         System.out.print("Введите число : ");
         int a = Input.nextInt();
         Input.close();
-        System.out.println("Треугольное число = " + Triangle(a) + "\n");
+        System.out.println("Треугольное число = " + TriaC(a) + "\n");
     }
 
-    public static int Triangle(int num) {
-        if (num == 1) {
+    public static int TriaC(int n) {
+        if (n == 1) {
             return 1;
         }
-        return Triangle(num - 1) + num;
+        return TriaC(n - 1) + n;
     }
 }
